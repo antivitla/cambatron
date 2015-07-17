@@ -1,0 +1,1 @@
+a,button{cursor:pointer}#work-time-tracker{width:100%;max-width:500px;margin:8px auto}wtt-book,wtt-robot,wtt-robot-monitor{display:block;margin:8px}wtt-robot{overflow:hidden}wtt-robot button:first-of-type{float:left}wtt-robot button:last-of-type{float:right}wtt-book-entry{display:block}debug{font-family:monospace}
