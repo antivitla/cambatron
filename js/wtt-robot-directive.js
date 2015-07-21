@@ -11,9 +11,7 @@
 			controllerAs: "robot",
 			controller: ["WorkTimeTrackerRobot", function (WorkTimeTrackerRobot) {
 				this.start = function () {
-					WorkTimeTrackerRobot.start({
-						description: "Кокая-то зодача " + Math.round(Math.random()*100)
-					});
+					WorkTimeTrackerRobot.start();
 				};
 				this.stop = function () {
 					WorkTimeTrackerRobot.stop();

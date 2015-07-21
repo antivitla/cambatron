@@ -1,4 +1,4 @@
-/*@import url("../bower_components/angular-material/angular-material.min.css");*/
+@import url("../bower_components/angular-material/angular-material.min.css");
 /*@import url("http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic");*/
 @import url("angular-material-exo2-font.min.css");
 /*@import url("angular-material-opensans-font.min.css");*/
@@ -15,9 +15,16 @@ md-icon.material-icons.md-36 { width: 36px; height: 36px; }
 md-icon.material-icons.md-48 { width: 48px; height: 48px; }
 
 /*	Rules for using icons as black on a light background.*/
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54) !important; }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.md-dark { color: rgba(0, 0, 0, 0.54) !important; }
+.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
 
 /*	Rules for using icons as white on a dark background.*/
-.material-icons.md-light { color: rgba(255, 255, 255, 1) !important; }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.md-light { color: rgba(255, 255, 255, 1) !important; }
+.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.md-icon-button .material-icons {
+	position: relative;
+	top: -1px;
+	/*vertical-align: top;*/
+	/*line-height: inherit;*/
+}

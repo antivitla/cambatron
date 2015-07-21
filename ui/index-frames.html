@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="Cambatron">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Камбатрон</title>
+	<!-- <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css"> -->
+	<link rel="stylesheet" href="../css/angular-material.min.css">
+	<link rel="stylesheet" href="ui.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+	<md-content>
+		<div layout="row">
+			<iframe flex src="timer-start-task.html"></iframe>
+			<iframe flex src="begin-task.html"></iframe>
+		</div>
+		<div layout="row">
+			<iframe flex src="create-project.html"></iframe>
+			<iframe flex src="toolbar.html"></iframe>
+		</div>
+		<div layout="row">
+			<iframe flex class="long" src="projects-by-clients-with-archive.html"></iframe>
+			<iframe flex class="long" src="projects-by-clients.html"></iframe>
+			<iframe flex src="start-timer.html"></iframe>
+		</div>
+		<div layout="row">
+		</div>
+		<div layout="row">
+		</div>
+	</md-content>
+
+
+
+
+
+	<!-- angular -->
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<!-- firebase (online backend-as-service) API -->
+	<!-- <script src="bower_components/firebase/firebase.js"></script> -->
+	<!-- angular plugin for firebase -->
+	<!-- <script src="bower_components/angularfire/dist/angularfire.min.js"></script> -->
+	<!-- other angular plugins -->
+	<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+	<script src="../bower_components/angular-material/angular-material.min.js"></script>
+
+	<!-- cambatron app, depengin on angular framework and firebase backend -->
+	<script src="../js/app.min.js"></script>
+	<script src="ui.js"></script>
+
+</body>
+</html>

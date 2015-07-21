@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="Cambatron">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Камбатрон</title>
+	<!-- <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css"> -->
+	<link rel="stylesheet" href="../css/angular-material.min.css">
+	<link rel="stylesheet" href="ui.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body style="background-color: transparent;">
+
+	<md-toolbar>
+		<div class="md-toolbar-tools">
+			<h2>Idealmaster</h2>
+			<span flex></span>
+			<md-button class="md-icon-button"><md-icon>alarm</md-icon></md-button>
+			<md-button class="md-icon-button"><md-icon>add</md-icon></md-button>
+		</div>
+	</md-toolbar>
+
+	<md-content style="background-color: transparent; height: calc(100% - 64px);">
+		<div style="max-width: 600px; margin: 0 auto;">
+			<md-list flex ng-controller="ProjectsByClientsController">
+				<div ng-repeat="(client, projects) in projectsbyclients">
+					<md-subheader class="md-subhead md-no-stickyz">{{client}}</md-subheader>
+					<md-list-item ng-repeat-start="project in projects">
+						<p class="md-headline">{{project.name}}</p>
+					</md-list-item>
+					<md-divider ng-repeat-end></md-divider>
+				</div>
+			</md-list>
+		</div>
+	</md-content>
+
+
+
+
+
+	<!-- angular -->
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<!-- firebase (online backend-as-service) API -->
+	<!-- <script src="bower_components/firebase/firebase.js"></script> -->
+	<!-- angular plugin for firebase -->
+	<!-- <script src="bower_components/angularfire/dist/angularfire.min.js"></script> -->
+	<!-- other angular plugins -->
+	<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+	<script src="../bower_components/angular-material/angular-material.min.js"></script>
+
+	<!-- cambatron app, depengin on angular framework and firebase backend -->
+	<script src="../js/app.min.js"></script>
+	<script src="ui.js"></script>
+
+</body>
+</html>

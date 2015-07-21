@@ -18,7 +18,7 @@
 			<button class="stop" ng-click="robot.stop()">Закончить</button>
 		</wtt-robot>
 
-		<wtt-robot-monitor ng-if="robot.status()">
+		<wtt-robot-monitor ng-if="false">
 			Статус: {{robot.status() ? "Записываем" : "" }}<br>
 			Запись: {{robot.entry() | json}}
 			<div>{{robot.entry|json}}</div>

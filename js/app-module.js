@@ -3,5 +3,5 @@
  */
 ;(function () {
 	"use strict";
-	angular.module("Cambatron", ["WorkTimeTrackerModule"]);
+	angular.module("Cambatron", ["WorkTimeTrackerModule", "ngMaterial"]);
 }());

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="Cambatron">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Камбатрон</title>
+	<!-- <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css"> -->
+	<link rel="stylesheet" href="../css/angular-material.min.css">
+	<link rel="stylesheet" href="ui.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body style="background-color: transparent;">
+
+	<md-content style="background-color: transparent;">
+		<!-- <div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div> -->
+		<div layout="row" class="second-row">
+			<div>&nbsp;</div>
+			<!-- <div><md-button class="md-raised md-primary md-light">&emsp;Начать&emsp;</md-button></div> -->
+			<md-menu md-position-mode="target-right target">
+				<md-button class="md-raised md-primary md-icon-button" ng-click="$mdOpenMenu()"><md-icon md-menu-origin>add</md-icon></md-button>
+				<md-menu-content width="3">
+					<md-menu-item>
+						<md-button ng-click="nothing($event)">
+							<p>Задачу</p>
+							<md-icon md-menu-align-target>done</md-icon>
+						</md-button>
+					</md-menu-item>
+					<md-menu-item>
+						<md-button ng-click="nothing($event)">
+							<p>Клиента</p>
+							<md-icon md-menu-align-target>person</md-icon>
+						</md-button>
+					</md-menu-item>
+					<md-menu-item>
+						<md-button ng-click="nothing($event)">
+							<p>Проект</p>
+							<md-icon md-menu-align-target>folder</md-icon>
+						</md-button>
+					</md-menu-item>
+				</md-menu-content>
+			</md-menu>
+			<!-- <div><md-button class="md-fab md-fab-top-right md-primary md-icon-button"><md-icon class="">add</md-icon></md-button></div> -->
+		</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<!-- <div class="content">
+			<md-list ng-controller="ProjectsByClientsController">
+				<div ng-repeat="(client, projects) in projectsbyclients">
+					<md-subheader class="md-subhead">{{client}}</md-subheader>
+					<md-list-item ng-repeat-start="project in projects">
+						<p class="md-headline">{{project.name}}</p>
+					</md-list-item>
+					<md-divider ng-repeat-end></md-divider>
+				</div>
+			</md-list>
+		</div> -->
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+	</md-content>
+
+
+
+
+
+	<!-- angular -->
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<!-- firebase (online backend-as-service) API -->
+	<!-- <script src="bower_components/firebase/firebase.js"></script> -->
+	<!-- angular plugin for firebase -->
+	<!-- <script src="bower_components/angularfire/dist/angularfire.min.js"></script> -->
+	<!-- other angular plugins -->
+	<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+	<script src="../bower_components/angular-material/angular-material.min.js"></script>
+
+	<!-- cambatron app, depengin on angular framework and firebase backend -->
+	<script src="../js/app.min.js"></script>
+	<script src="ui.js"></script>
+
+</body>
+</html>

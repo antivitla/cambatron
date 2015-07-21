@@ -13,6 +13,23 @@
 </head>
 <body>
 
+	<svg width="500px" height="300px">
+		<path id="svg-test-1" d="M10,10q50,-10,100,0l20,5t50,-10t200,-10" fill="transparent" stroke="black" stroke-width="3"/>
+	</svg>
+
+	<script>
+		function randomHLine(x0,x1,y,yd,k) {
+			var step = Math.ceil((x1-x0)/k);
+			var path = "M"+x0+","+y;
+			for (var i = x0+step; (step > 0 ? i < x1 : i > x1); i = i + step) {
+				path = path + "L"+i+","+(y+yd*(Math.random()-0.5));
+			}
+			path+="L"+x1+","+y;
+			document.getElementById("svg-test-1").setAttribute("d", path);
+		}
+		randomHLine(400, 10, 100, 30, 3);
+	</script>
+
 	<!-- angular -->
 	<script src="bower_components/angular/angular.min.js"></script>
 	<!-- firebase (online backend-as-service) API -->
